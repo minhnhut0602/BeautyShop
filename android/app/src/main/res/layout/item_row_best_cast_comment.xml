@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/transparent">
+
+    <mimishop.yanji.com.mimishop.view.CircledNetworkImageView
+        xmlns:circle="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+        android:id="@+id/civ_user"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_red_round_normal"
+                android:text="베스트"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:id="@+id/tv_mark"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:visibility="gone"
+                android:paddingBottom="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="회원1"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_user_name"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="상품"
+            android:textColor="@color/font_color_dark_gray"
+            android:gravity="left"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:id="@+id/tv_comment"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2012/03/03 22:01"
+            android:textSize="12sp"
+            android:textColor="@color/font_light_gray"
+            android:id="@+id/tv_date"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            >
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/btn_like"
+                android:gravity="left|center_vertical"
+                android:text="좋아요"
+                android:textSize="12sp"
+                android:textColor="@color/main_background_color"
+                android:background="@color/transparent"
+                android:layout_gravity="center_vertical"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_heart"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_like_count"
+                android:text="0"
+                android:textSize="12sp"
+                android:textColor="@color/main_background_color"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

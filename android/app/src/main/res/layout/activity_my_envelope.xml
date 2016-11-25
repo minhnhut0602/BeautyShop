@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mimishop.yanji.com.mimishop.activity.mypage.MyEnvelopeActivity"
+    android:background="@color/white">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/menu_general"
+        android:id="@+id/menu_main"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        >
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/btn_check1_selector"
+            android:textColor="@color/text_gray"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/padding_checkbox"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            android:text="전체선택"
+            android:id="@+id/cb_delete"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/layout_bg_grey"
+            android:text="삭제"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+           android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/btn_delete"
+            />
+
+        </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_gray"/>
+
+    <ListView
+        android:id="@+id/lv_envelop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/transparent"
+        android:divider="@color/border_gray"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_add_product"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_bg_style3_selector"
+        android:text="리스트추가"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        />
+
+    <Button
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="가격표 이미지 등록"
+        android:background="@drawable/layout_bg_buton_start_round"
+        android:id="@+id/btn_input_info"
+        />
+
+    <com.devsmart.android.ui.HorizontalListView
+        android:id="@+id/hlv_product_image_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:textStyle="bold"
+            android:textColor="@color/text_cast_comment_search_selector"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="수정"
+            android:background="@drawable/btn_bg_style1_selector"
+            android:id="@+id/btn_modify_price_image"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:textStyle="bold"
+            android:textColor="@color/text_cast_comment_search_selector"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="등록"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_bg_style1_selector"
+            android:id="@+id/btn_register_price_image"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+</LinearLayout>

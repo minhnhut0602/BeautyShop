@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/main_background_color"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/btn_top_back_selector"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:id="@+id/btn_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="강남VALT(발트)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/tv_title"
+            android:layout_toRightOf="@+id/btn_back"
+            android:layout_toLeftOf="@+id/ll_buttons"
+            android:lines="1"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:id="@+id/ll_buttons">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:src="@drawable/ic_my_shop_preview"
+                android:background="@color/transparent"
+                android:id="@+id/ib_preview"/>
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_menu"
+                android:id="@+id/ib_menu"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

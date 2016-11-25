@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mimishop.yanji.com.mimishop.activity.shopinfo.ShowUserAfterActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:id="@+id/ll_content">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/menu_general"
+            android:id="@+id/menu_main"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <Button
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center_horizontal"
+                android:text="별점선택"
+                android:background="@drawable/layout_bg_buton_start_round"
+                android:id="@+id/btn_select_star"
+                />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp">
+                    <mimishop.yanji.com.mimishop.view.StarRatingBar
+                        xmlns:ratingbar="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                        android:id="@+id/rating_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        ratingbar:rating="0"
+                        ratingbar:max_rating="5"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="left|top"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/text_gray"
+                android:hint="200자 이내로 작성하여 주세요^^ \n악성 댓글 및 욕설, 폭언등은  작성자의 동의 없이 삭제될수 있습니다."
+                android:textColorHint="@color/light_text_gray"
+                android:background="@drawable/layout_border_grey"
+                android:id="@+id/et_modify"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="후기 등록하기"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_cast_comment_search_selector"
+                    android:id="@+id/btn_modify"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/btn_bg_style1_selector"
+                    android:layout_centerVertical="true"
+                    android:visibility="visible"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/border_gray"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_comments"
+            android:background="@color/white"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null"
+            android:divider="@color/transparent"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/menu_home"
+        android:id="@+id/menu_main"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/content"
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:visibility="visible"
+                android:id="@+id/rl_home_banner"
+                >
+
+                <com.viewpagerindicator.TabPageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/shop_img_bg"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_first_dot"
+                        android:layout_width="6dip"
+                        android:layout_height="6dip"
+                        android:background="@drawable/ic_indicator_activate"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/iv_second_dot"
+                        android:layout_width="6dip"
+                        android:layout_height="6dip"
+                        android:layout_marginLeft="4dip"
+                        android:background="@drawable/ic_indicator"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/iv_third_dot"
+                        android:layout_width="6dip"
+                        android:layout_height="6dip"
+                        android:layout_marginLeft="4dip"
+                        android:background="@drawable/ic_indicator"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+
+                    <mimishop.yanji.com.mimishop.view.CustomImageButton
+                        xmlns:customimage="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/btn_find_hair"
+                        android:layout_gravity="center_vertical"
+                        customimage:src="@drawable/btn_find_hair_selector"
+                        customimage:space="7"
+                        customimage:text="내 주변 \n헤어샵 찾기"
+                        customimage:textcolor="@color/text_gray"
+                        customimage:titlesize="12"
+                        />
+
+                    <mimishop.yanji.com.mimishop.view.CustomImageButton
+                        xmlns:customimage="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/btn_find_nail"
+                        android:layout_gravity="center_vertical"
+                        customimage:src="@drawable/btn_find_nail_selector"
+                        customimage:space="7"
+                        customimage:text="내 주변 \n네일샵 찾기"
+                        customimage:textcolor="@color/text_gray"
+                        customimage:titlesize="12"
+                        />
+
+                    <mimishop.yanji.com.mimishop.view.CustomImageButton
+                        xmlns:customimage="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/btn_search_price"
+                        android:layout_gravity="center_vertical"
+                        customimage:src="@drawable/btn_find_price_selector"
+                        customimage:space="7"
+                        customimage:text="가격 비교 \n검색"
+                        customimage:textcolor="@color/text_gray"
+                        customimage:titlesize="12"
+                        />
+
+                    <mimishop.yanji.com.mimishop.view.CustomImageButton
+                        xmlns:customimage="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/btn_mimi_cast"
+                        android:layout_gravity="center_vertical"
+                        customimage:src="@drawable/btn_cast_selector"
+                        customimage:space="7"
+                        customimage:text="미미 \n캐스트"
+                        customimage:textcolor="@color/text_gray"
+                        customimage:titlesize="12"
+                        />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+    
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ll_best_shop"
+                    android:visibility="visible"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="추천 "
+                                android:textSize="16sp"
+                                android:textColor="@color/text_gray"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/tv_shop_event_title"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="샵"
+                                android:textSize="16sp"
+                                android:textColor="@color/main_background_color"
+                                android:layout_marginRight="5dp"
+                                android:layout_toRightOf="@+id/tv_shop_event_title"/>
+                        </RelativeLayout>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/transparent"
+                            android:text="더보기 >"
+                            android:textSize="12sp"
+                            android:textColor="@color/main_background_color"
+                            android:id="@+id/btn_see_more_shop_event"/>
+                    </RelativeLayout>
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/item_row_event"
+                        android:id="@+id/ic_best_shop_event"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ll_best_freetalk"
+                    android:visibility="visible">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="자유톡 "
+                                android:textSize="16sp"
+                                android:textColor="@color/text_gray"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/tv_freetalk_title"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="베스트"
+                                android:textSize="16sp"
+                                android:layout_marginRight="5dp"
+                                android:textColor="@color/main_background_color"
+                                android:layout_toRightOf="@+id/tv_freetalk_title"/>
+                        </RelativeLayout>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/transparent"
+                            android:text="더보기 >"
+                            android:textSize="12sp"
+                            android:textColor="@color/main_background_color"
+                            android:id="@+id/btn_see_more_freetalk"
+                            />
+                    </RelativeLayout>
+
+                    <GridView
+                        android:id="@+id/gv_best_freetalk"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:listSelector="@color/transparent"
+                        android:numColumns="2"
+                        android:scrollbars="none"
+                        android:horizontalSpacing="5dp"
+                        android:stretchMode="columnWidth"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:orientation="vertical"
+                    android:background="@color/white"
+                    android:id="@+id/ll_best_cast"
+                    android:visibility="visible"
+                   >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                       <RelativeLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           >
+                       
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="미미캐스트 "
+                               android:textSize="16sp"
+                               android:textColor="@color/text_gray"
+                               android:layout_marginLeft="5dp"
+                               android:id="@+id/tv_cast_title"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="베스트"
+                               android:textSize="16sp"
+                               android:textColor="@color/main_background_color"
+                               android:layout_marginRight="5dp"
+                               android:layout_toRightOf="@+id/tv_cast_title"/>
+                       </RelativeLayout>
+                       <Button
+                           android:layout_width="wrap_content"
+                           android:layout_height="20dp"
+                           android:layout_alignParentRight="true"
+                           android:background="@color/transparent"
+                           android:text="더보기 >"
+                           android:textSize="12sp"
+                           android:textColor="@color/main_background_color"
+                           android:id="@+id/btn_see_more_cast"/>
+                    </RelativeLayout>
+
+                   <GridView
+                       android:id="@+id/gv_best_cast"
+                       android:layout_width="match_parent"
+                       android:layout_height="180dp"
+                       android:background="@color/transparent"
+                       android:gravity="center_vertical|center_horizontal"
+                       android:listSelector="@color/transparent"
+                       android:numColumns="2"
+                       android:scrollbars="none"
+                       android:horizontalSpacing="5dp"
+                       android:stretchMode="columnWidth"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:layout_marginBottom="5dp"/>
+               </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:id="@+id/ll_best_life"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="추천 "
+                                android:textSize="16sp"
+                                android:textColor="@color/text_gray"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/tv_event_title"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="생활정보"
+                                android:textSize="16sp"
+                                android:textColor="@color/main_background_color"
+                                android:layout_marginRight="5dp"
+                                android:layout_toRightOf="@+id/tv_event_title"/>
+                        </RelativeLayout>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/transparent"
+                            android:text="더보기 >"
+                            android:textSize="12sp"
+                            android:textColor="@color/main_background_color"
+                            android:id="@+id/btn_see_more_event"/>
+                    </RelativeLayout>
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/item_row_life"
+                        android:id="@+id/ic_best_event"
+                        android:layout_marginBottom="5dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

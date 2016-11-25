@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_translucent"
+    android:id="@+id/root">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/layout_dlg_top_bg_round_pink">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_dlg_exit"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ib_exit"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="답변글쓰기"
+                android:id="@+id/tv_dlg_title"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/layout_dlg_bottom_bg_round_white"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_name"
+                android:text="미미샵"
+                android:textSize="13sp"
+                android:textColor="@color/button_star_bg"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_more"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/layout_border_grey"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:gravity="left|top"
+                android:textSize="12sp"
+                android:hint="답변내용을 작성해주세요."
+                android:id="@+id/et_comment"
+                />
+
+            <Button
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="답변하기"
+                android:id="@+id/btn_answer"
+                android:background="@color/main_background_color"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

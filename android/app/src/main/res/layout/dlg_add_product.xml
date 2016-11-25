@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@color/light_translucent">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:id="@+id/content"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/layout_dlg_top_bg_round_pink">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_dlg_exit"
+                    android:background="@color/transparent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/ib_exit"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상품 추가"
+                    android:id="@+id/tv_dlg_title"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_dlg_bottom_bg_round_white"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="상품이름"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/layout_border_grey"
+                    android:textSize="13sp"
+                    android:id="@+id/et_product_name"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="정가격"
+                    android:textSize="13sp"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/layout_border_grey"
+                    android:id="@+id/et_right_price"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="이벤트가격"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="number"
+                    android:textSize="13sp"
+                    android:background="@drawable/layout_border_grey"
+                    android:textColor="@color/red"
+                    android:id="@+id/et_discount_price"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="상품 추가"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/layout_bg_grey"
+                    android:id="@+id/btn_add_product"/>
+            </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

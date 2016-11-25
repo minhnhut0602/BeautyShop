@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mimishop.yanji.com.mimishop.activity.cast.CastBestActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/menu_cast_best"
+        android:id="@+id/menu_main"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:background="@color/best_cast_text_bg"
+        android:text="2015.05.04 18:00 Update"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/tv_time"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_best_cast"
+        android:background="@color/white"
+        android:dividerHeight="2dp"
+        android:divider="@color/border_gray"/>
+
+</LinearLayout>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_info"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/button_gray"
+            android:textSize="10sp"
+            android:text="상점 등록에 필요한 신청자 정보를 입력해 주시면, 미미샵을 통해 노출되는 상점 페이지의 모든 서비스를 무료로 관리하실수 있습니다."/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:text="아이디"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+                <mimishop.yanji.com.mimishop.view.CustomEditText
+                    xmlns:customedit="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                    android:id="@+id/et_store_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_toLeftOf="@+id/tv_duplicate_id"
+                    customedit:hint="ID를 입력해주세요."
+                    android:visibility="visible"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="중복확인"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_cast_comment_search_selector"
+                    android:id="@+id/tv_duplicate_id"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/btn_bg_style1_selector"
+                    android:layout_centerVertical="true"
+                    android:visibility="visible"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:text="비밀번호 입력"/>
+
+            <mimishop.yanji.com.mimishop.view.CustomEditText
+                xmlns:customedit="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                android:id="@+id/et_store_pw"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:inputType="textPassword"
+                customedit:hint="비밀번호를 입력해주세요."
+                android:visibility="visible"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:text="비밀번호 재입력"/>
+
+            <mimishop.yanji.com.mimishop.view.CustomEditText
+                xmlns:customedit="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                android:id="@+id/et_store_confirm_pw"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:inputType="textPassword"
+                customedit:hint="비밀번호를 한번 더 입력해주세요."
+                android:visibility="visible"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_reference"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_background_color"
+                android:layout_gravity="center_vertical"
+                android:textSize="10sp"
+                android:text="상점관리페이지를 이용하기 위해 아이디와 비번을 생성해주세요. "/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:text="상점이름"/>
+
+            <mimishop.yanji.com.mimishop.view.CustomEditText
+                xmlns:customedit="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                android:id="@+id/et_store_name"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                customedit:hint="상점이름을 입력해주세요."
+                android:visibility="visible"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:text="상점주소"/>
+
+            <mimishop.yanji.com.mimishop.view.CustomEditText
+                xmlns:customedit="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                android:id="@+id/et_store_address"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                customedit:hint="상점주소를 입력해주세요."
+                android:visibility="visible"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:text="상점 전화번호"/>
+
+            <mimishop.yanji.com.mimishop.view.CustomEditText
+                xmlns:customedit="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                android:id="@+id/et_store_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                customedit:hint="상점 전화번호를 입력해주세요."
+                android:visibility="visible"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:text="영업시간"/>
+
+            <mimishop.yanji.com.mimishop.view.CustomEditText
+                xmlns:customedit="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                android:id="@+id/et_store_open_time"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                customedit:hint="영업시간을 입력해주세요."
+                android:visibility="visible"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:text="휴무"/>
+
+            <mimishop.yanji.com.mimishop.view.CustomEditText
+                xmlns:customedit="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                android:id="@+id/et_store_rest_time"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                customedit:hint="휴무를 입력해주세요."
+                android:visibility="visible"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:text="주차가능여부"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:button="@drawable/btn_check_selector"
+                    android:textColor="@color/text_gray"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/padding_checkbox"
+                    android:textSize="12sp"
+                    android:text="주차가능"
+                    android:id="@+id/cb_shop_park_enable"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:button="@drawable/btn_check_selector"
+                    android:textColor="@color/text_gray"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/padding_checkbox"
+                    android:textSize="12sp"
+                    android:text="주차불가"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/cb_shop_park_disable"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:text="사업자등록증"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/btn_store_register_identification"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_bg_style1_selector"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_camera_selector"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="사업자등록증 등록"
+                        android:textColor="@color/text_cast_comment_search_selector"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ic_reference"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_background_color"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="10sp"
+                    android:text="사업자등록증을 첨부해주시면 신속하게 처리해드립니다.\n(상점의 실제 관계자임을 증명하는 자료로 사용됩니다.)"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="신청자정보"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/main_background_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:text="이름"/>
+
+            <mimishop.yanji.com.mimishop.view.CustomEditText
+                xmlns:customedit="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                android:id="@+id/et_manager_name"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                customedit:hint="이름을 입력해주세요."
+                android:visibility="visible"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:text="연락처"/>
+
+            <mimishop.yanji.com.mimishop.view.CustomEditText
+                xmlns:customedit="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                android:id="@+id/et_manager_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                customedit:hint="연락처를 입력해주세요."
+                android:visibility="visible"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_bg_style2_selector"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:text="상점관리 서비스 무료사용 신청하기"
+            android:id="@+id/btn_register_store"/>
+    </LinearLayout>
+</LinearLayout>

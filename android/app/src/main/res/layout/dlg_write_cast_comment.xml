@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cast_comment_popup_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_top">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:id="@+id/btn_close"
+            android:text="닫기"
+            android:textColor="@color/main_background_color"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/rl_search"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_comment2">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_cast_search_selector"
+                android:text="인기순"
+                android:textSize="13sp"
+                android:textColor="@color/text_cast_comment_search_selector"
+                android:id="@+id/btn_search_1"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_cast_search_right_selector"
+                android:text="최신순"
+                android:textSize="13sp"
+                android:textColor="@color/text_cast_comment_search_selector"
+                android:id="@+id/btn_search_2"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lv_cast_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_below="@+id/rl_top"
+        android:dividerHeight="1dp"
+        android:divider="@color/border_gray"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_bottom"
+        android:background="@color/cast_comment_bg"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:text="등록"
+            android:textColor="@color/cast_comment_btn_bg"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_write_comment"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="댓글을 달아주세요."
+            android:textSize="12sp"
+            android:id="@+id/et_comment"
+            android:textColor="@color/font_color_gray"
+            android:layout_toLeftOf="@+id/btn_write_comment"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"/>
+
+    </RelativeLayout>
+</RelativeLayout>

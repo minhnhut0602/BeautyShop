@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mimishop.yanji.com.mimishop.activity.TubeSearchActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/menu_shop_map"
+        android:id="@+id/menu_main"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/layout_border_edit_main"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_search"
+                android:src="@drawable/ic_search"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:id="@+id/et_search_text"
+                android:hint="지하철역명을 입력하세요."
+                android:textSize="14sp"
+                android:textColorHint="@color/main_background_color"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_toRightOf="@+id/iv_search"
+                android:layout_toLeftOf="@+id/ib_search"
+                android:textColor="@color/main_background_color"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_red_search"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                android:id="@+id/ib_search"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/border_gray"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_tube"
+            android:background="@color/white"
+            android:dividerHeight="1dp"
+            android:divider="@color/border_gray"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+include ':app', ':devsmartAndroid', ':viewpager_indicator', ':PagerSlidingTabStrip-master', ':KakaoSDK',':FacebookSDK'
+project(':devsmartAndroid').projectDir = new File('libraries/devsmartAndroid')
+project(':viewpager_indicator').projectDir = new File('libraries/viewpager_indicator')
+project(':PagerSlidingTabStrip-master').projectDir = new File('libraries/PagerSlidingTabStrip-master')
+project(':KakaoSDK').projectDir = new File('libraries/KakaoSDK')
+project(':FacebookSDK').projectDir = new File('libraries/FacebookSDK')

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="40dp">
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_vertical"
+       android:layout_marginLeft="5dp"
+       android:visibility="gone"
+       android:id="@+id/iv_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="미용실"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray"
+        android:background="@color/transparent"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_toLeftOf="@+id/ib_change_location"
+        android:id="@+id/tv_name"/>
+</LinearLayout>

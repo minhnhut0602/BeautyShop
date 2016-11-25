@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_background_color">#ff4973</color>
+    <color name="light_main_background_color">#fc6084</color>
+    <color name="dark_main_background_color">#fe7c7c</color>
+
+    <color name="grey">#f7f7f7</color>
+    <color name="dark_grey">#3c3c3c</color>
+    <color name="light_grey">#c3c3c3</color>
+    <color name="more_dark_gray">#9c9ca1</color>
+
+    <color name="green">#3fd399</color>
+    <color name="dark_green">#25b46b</color>
+    <color name="light_green">#82f1b9</color>
+
+    <color name="navy">#f2916e</color>
+    <color name="dark_navy">#ff7b23</color>
+    <color name="light_navy">#f7b081</color>
+
+    <color name="blue">#5bb1ca</color>
+    <color name="dark_blue">#11627a</color>
+    <color name="light_blue">#25acd3</color>
+
+    <color name="red">#ff1b4c</color>
+    <color name="dark_red">#c1042c</color>
+    <color name="light_red">#ff7b23</color>
+
+    <color name="purple">#a990b7</color>
+    <color name="dark_purple">#ff7d0f8a</color>
+    <color name="light_purple">#a749db</color>
+
+    <color name="bluesky">#509DFF</color>
+    <color name="dark_bluesky">#2C5FC7</color>
+    <color name="light_bluesky">#BACBD9</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="dark_white">#7fffffff</color>
+    <color name="light_white">#afffffff</color>
+
+    <color name="main_bottom_bar_background">#f9f7f8</color>
+    <color name="border_gray">#e1dfe1</color>
+    <color name="dark_border_gray">#888888</color>
+    <color name="event_border_gray">#dddddd</color>
+    <color name="button_gray">#b0b0b0</color>
+    <color name="layout_gray">#cccccc</color>
+    <color name="layout_dark_gray">#464646</color>
+    <color name="text_gray">#444444</color>
+    <color name="light_text_gray">#999999</color>
+    <color name="button_star_bg">#7ad4e1</color>
+    <color name="cast_bg_gray">#f2f2f2</color>
+    <color name="shop_img_bg">#ffe9ee</color>
+    <color name="my_jim_list_bg">#f1f1f1</color>
+    <color name="envelop_select_bg">#fff6f8</color>
+    <color name="tube_bg1">#011b6f</color>
+    <color name="tube_bg2">#26a500</color>
+    <color name="tube_bg3">#ff7d01</color>
+    <color name="tube_bg4">#0184fa</color>
+    <color name="tube_bg5">#8207b7</color>
+    <color name="tube_bg6">#682c2b</color>
+    <color name="tube_bg7">#49682c</color>
+    <color name="tube_bg8">#fd017c</color>
+    <color name="tube_bg9">#a89536</color>
+    <color name="tube_bg10">#ae0606</color>
+    <color name="tube_bg11">#f9c003</color>
+    <color name="best_cast_text_bg">#484848</color>
+    <color name="cast_comment_popup_bg">#ffffff</color>
+    <color name="cast_comment_bg">#cecece</color>
+    <color name="cast_comment_btn_bg">#969699</color>
+    <color name="shop_horizental_bg">#e2e2e2</color>
+
+    <color name="orange">#fbc038</color>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="dialog_category_list_divider">#fff0f0f0</color>
+    <color name="list_background_selected_color">#40039fd0</color>
+    <color name="font_orange">#ffff9600</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="light_translucent">#40000000</color>
+    <color name="translucent">#80000000</color>
+    <color name="black">#ff000000</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="event_font_color_title">#ff8f8f8f</color>
+
+    <color name="font_light_gray">#ffb1b1b1</color>
+    <color name="font_color_dark_gray">#ff666666</color>
+    <color name="font_color_more_dark_gray">#ff616161</color>
+    <color name="font_color_gray">#ff909090</color>
+    <color name="font_color_red">#ffe6301f</color>
+
+    <color name="location_list_bg">#333333</color>
+    <color name="location_list_text_color">#f2f2f2</color>
+    <color name="location_divider_color">#444444</color>
+
+    <color name="exit_dlg_btn_bg_selected">#ffedf1</color>
+
+    <color name="home_bg_shop">#5b5b5b</color>
+    <color name="home_bg_cast">#54bee9</color>
+    <color name="home_bg_life">#80cf61</color>
+    <color name="home_bg_talk">#ff4973</color>
+    <color name="intro_info">#efefef</color>
+</resources>

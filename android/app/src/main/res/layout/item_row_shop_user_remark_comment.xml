@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <mimishop.yanji.com.mimishop.view.StarRatingBar
+                xmlns:ratingbar="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                ratingbar:rating="0"
+                ratingbar:max_rating="5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2012/03/03 22:01"
+                android:textColor="@color/light_text_gray"
+                android:layout_toRightOf="@+id/rating_bar"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:id="@+id/tv_date"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(미미...)"
+                android:textColor="@color/light_text_gray"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/tv_date"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_user_name"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="상품"
+            android:textColor="@color/font_color_dark_gray"
+            android:gravity="left"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:id="@+id/tv_comment"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:text="신고"
+                android:textSize="12sp"
+                android:textColor="@color/main_background_color"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/tv_user_name"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:id="@+id/tv_inform"/>
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:text="삭제"
+                android:textSize="12sp"
+                android:textColor="@color/light_text_gray"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_remove"/>
+            </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_gray"/>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mimishop.yanji.com.mimishop.activity.mypage.ShowMyNewsActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/menu_general"
+        android:id="@+id/menu_main"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <mimishop.yanji.com.mimishop.view.CustomTabButton
+                android:id="@+id/btn_show_my_writing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="내가 쓴 글"
+                android:visibility="visible"
+                />
+
+            <mimishop.yanji.com.mimishop.view.CustomTabButton
+                android:id="@+id/btn_show_my_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="내가 쓴 댓글"
+                android:visibility="visible"
+                />
+
+            <mimishop.yanji.com.mimishop.view.CustomTabButton
+                android:id="@+id/btn_show_my_recent_news"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="최근 알림"
+                android:visibility="visible"
+                />
+
+            </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/border_gray"/>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_news"
+        android:background="@color/white"
+        android:dividerHeight="1dp"
+        android:divider="@color/border_gray"
+        />
+
+</LinearLayout>

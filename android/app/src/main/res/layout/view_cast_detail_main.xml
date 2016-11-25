@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:id="@+id/iv_cast_main"
+            android:background="@color/black"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/translucent"/>
+
+        <mimishop.yanji.com.mimishop.view.ScaleNetworkImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"
+            android:src="@drawable/loading_720_1230_default"
+            android:id="@+id/iv_cast"
+            />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:id="@+id/ib_back"
+            android:src="@drawable/btn_top_back_selector"
+            android:background="@color/transparent"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_alignParentBottom="true"
+            android:text="캐스트 내용"
+            android:id="@+id/tv_content"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/ib_back"
+            android:gravity="right"
+            android:text=""
+            android:id="@+id/tv_publish"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

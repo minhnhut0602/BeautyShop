@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@color/light_translucent">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/layout_dlg_top_bg_round_pink">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_dlg_exit"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ib_exit"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디/비밀번호 찾기"
+                android:id="@+id/tv_dlg_title"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_dlg_bottom_bg_round_white"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp"
+                    android:text="연락처"/>
+
+                <mimishop.yanji.com.mimishop.view.CustomEditText
+                    xmlns:customedit="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    customedit:hint="연락처를 입력해주세요."
+                    android:visibility="visible"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp"
+                    android:text="상점이름"/>
+
+                <mimishop.yanji.com.mimishop.view.CustomEditText
+                    xmlns:customedit="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                    android:id="@+id/et_shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    customedit:hint="상점이름을 입력해주세요."
+                    android:visibility="visible"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_reference"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="입력하신 연락처로 회신을 드립니다."
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/main_background_color"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="전송"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_bg_grey"
+                android:id="@+id/btn_transfer"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

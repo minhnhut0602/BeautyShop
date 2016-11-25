@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">미미샵</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="agree_title_1">미미샵 이용약관</string>
+    <string name="agree_title_2">위치기반서비스</string>
+    <string name="agree_privacy_1"><u>이용약관 동의</u></string>
+    <string name="agree_privacy_2"><u>개인정보 수집이용 동의</u></string>
+    <string name="title_activity_register_store_and_product">RegisterStoreAndProduct</string>
+    <string name="title_activity_shop_detail">ShopDetailActivity</string>
+    <string name="title_activity_show_my_price">ShowMyPriceActivity</string>
+    <string name="title_activity_show_user_after">ShowUserAfterActivity</string>
+    <string name="title_activity_show_question_and_answer">ShowQuestionAndAnswer</string>
+    <string name="title_activity_price_search">PriceSearchActivity</string>
+    <string name="title_activity_cast">미미캐스트</string>
+    <string name="title_activity_event">EventActivity</string>
+    <string name="title_activity_exit_dialog">ExitDialog</string>
+    <string name="title_activity_cast_detail">CastDetailActivity</string>
+    <string name="title_activity_event_detail">이벤트 상세정보</string>
+    <string name="title_activity_my_shop_manage">내 상점 관리</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_write_comment">WriteCommentActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_my_jim">MyJimActivity</string>
+    <string name="title_activity_my_question">운영자에게 문의하기</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="title_question_answer">Q&amp;A</string>
+    <string name="title_activity_notice">공지사항</string>
+    <string name="title_activity_show_my_news">ShowMyNews</string>
+    <string name="title_activity_my_envelope">받은쪽지함</string>
+    <string name="title_activity_my_setting">설정</string>
+    <string name="title_activity_tube_search">지하철역 검색</string>
+    <string name="title_activity_shop_search">내 주변 상점 찾기</string>
+    <string name="title_activity_image_view">ImageViewActivity</string>
+    <string name="title_activity_cast_best">CastBestActivity</string>
+    <string name="title_activity_location_search">위치 설정</string>
+
+    <!-- SelectPhotoManager -->
+    <string name="photo_select_title">사진을 선택해 주세요</string>
+    <string name="photo_option_1">카메라 촬영</string>
+    <string name="photo_option_2">앨범에서 가져오기</string>
+    <string name="photo_option_3">삭제</string>
+    <string name="image_max_size_limit_msg">메모리 용량이 5MB이상이여야 합니다.</string>
+
+</resources>

@@ -1,0 +1,16 @@
+﻿[keystore]
+mimi1004
+debug: root123	
+release: mimi1004
+
+info: dlmobile, yanji, jilin, 86
+
+debug:
+debug.keystore(88:16:88:06:34:92:82:4C:7C:B6:3B:3C:5C:D4:96:82:56:98:CC:22)
+keystore.jsk  (
+release: 61:41:99:95:F8:0F:E5:FF:AE:7D:96:63:C8:5A:E0:5F:9D:FA:A8:1A
+debug: C6:84:64:26:7D:3F:4D:BB:FE:C3:30:9A:B9:12:DB:F8:5E:AC:60:DE)
+
+facebook키:
+iBaIBjSSgkx8tjs8XNSWglaYzCI=(debug)
+NfgDlIG7XWJzUZRUL+bZySrMX1Q=(release)

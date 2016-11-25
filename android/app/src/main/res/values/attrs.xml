@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="rating_bar_star_attributes" >
+		<attr name="rating" format="integer" />
+        <attr name="max_rating" format="integer" />
+	</declare-styleable>
+
+    <declare-styleable name="custom_edittext_attributes" >
+        <attr name="hint" format="string" />
+        <attr name="textsize" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="custom_imagebutton_attributes" >
+        <attr name="space" format="integer"/>
+        <attr name="text" format="string"/>
+        <attr name="src"  format="integer"/>
+        <attr name="textcolor" format="color"/>
+        <attr name="titlesize" format="integer"/>
+    </declare-styleable>
+</resources>

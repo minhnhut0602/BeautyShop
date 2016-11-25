@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_translucent"
+    tools:context="mimishop.yanji.com.mimishop.dialog.ExitDialog"
+    android:id="@+id/root">
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="442dp"
+        android:orientation="vertical"
+        android:background="@color/transparent"
+        android:layout_centerInParent="true"
+        android:id="@+id/content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="372dp"
+            android:id="@+id/rl_image"
+            android:background="@drawable/layout_dlg_top_bg_round_pink">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:id="@+id/pb_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/iv_ad_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_dlg_bottom_bg_round_pink"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="미미샵을 종료할까요?"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="취소"
+                    android:textColor="@color/text_exit_dlg_btn_text_selector"
+                    android:background="@drawable/btn_dlg_exit_bg_selector"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dip"
+                    android:layout_gravity="center"
+                    android:text="종료"
+                    android:textColor="@color/text_exit_dlg_btn_text_selector"
+                    android:background="@drawable/btn_dlg_exit_bg_selector"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

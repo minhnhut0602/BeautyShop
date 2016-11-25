@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bottom_bar_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_shop_answer_arrow"
+                android:id="@+id/iv_more"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_name"
+                android:text="미미샵"
+                android:textSize="13sp"
+                android:textColor="@color/button_star_bg"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_more"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_time"
+                android:text="2015-02-02 12:00:12"
+                android:textColor="@color/font_light_gray"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_talk_content"
+            android:textColor="@color/text_gray"
+            android:text="여기가 가장 좋은 곳인데............................................................\nasdfsdfsdfs"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:id="@+id/ll_buttons"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true">
+
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:id="@+id/btn_modify_comment"
+            android:background="@drawable/bg_btn_style4_selector"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="수정"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:background="@drawable/bg_btn_style4_selector"
+            android:id="@+id/btn_remove_comment"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="삭제"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/border_gray"/>
+</LinearLayout>

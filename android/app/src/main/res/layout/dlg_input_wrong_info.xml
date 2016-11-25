@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_translucent"
+    android:id="@+id/root"
+    >
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="310dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@color/transparent"
+        android:id="@+id/content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/layout_dlg_top_bg_round_pink">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_dlg_exit"
+                android:background="@color/transparent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ib_exit"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="정보수정요청"
+                android:id="@+id/tv_title"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_dlg_bottom_bg_round_white"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="잘못된 정보의 수정요청을 해주세요."
+                android:textColor="@color/light_text_gray"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rg_shop_status"
+                    android:layout_gravity="center_horizontal">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio_button_selector"
+                        android:textColor="@color/text_gray"
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"
+                        android:textSize="12sp"
+                        android:text="상점이 폐업했어요"
+                        />
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:button="@drawable/radio_button_selector"
+                        android:textColor="@color/text_gray"
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"
+                        android:textSize="12sp"
+                        android:text="상점이름이 잘못되었어요"
+                        />
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:button="@drawable/radio_button_selector"
+                        android:textColor="@color/text_gray"
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"
+                        android:textSize="12sp"
+                        android:text="주소가 잘못되었어요"
+                        />
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:button="@drawable/radio_button_selector"
+                        android:textColor="@color/text_gray"
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"
+                        android:textSize="12sp"
+                        android:text="전화번호가 잘못되었어요"
+                        />
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:button="@drawable/radio_button_selector"
+                        android:textColor="@color/text_gray"
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"
+                        android:textSize="12sp"
+                        android:text="영업시간이 잘못되었어요"
+                        />
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:button="@drawable/radio_button_selector"
+                        android:textColor="@color/text_gray"
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"
+                        android:textSize="12sp"
+                        android:text="할인정보가 잘못되었어요"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:button="@drawable/radio_button_selector"
+                            android:textColor="@color/text_gray"
+                            android:textStyle="bold"
+                            android:paddingLeft="5dp"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_vertical"
+                            android:text=""
+                            />
+                        <mimishop.yanji.com.mimishop.view.CustomEditText
+                            xmlns:customedit="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                            android:id="@+id/cet_wrong_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            customedit:hint="기타 잘못된 정보를 자세하게 적어주세요."
+                            customedit:textsize = "10"
+                            android:visibility="visible"
+                            android:layout_gravity="center_vertical"
+                            />
+                        </LinearLayout>
+                </RadioGroup>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="수정요청하기"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/layout_bg_grey"
+                    android:id="@+id/btn_modify"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

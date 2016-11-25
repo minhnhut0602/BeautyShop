@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/android:Theme.NoTitleBar">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="DropDownStyle">
+
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+
+        <item name="android:clickable">true</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:popupBackground">@color/white</item>
+        <item name="android:cacheColorHint">#FFF000</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

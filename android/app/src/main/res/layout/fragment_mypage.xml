@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/menu_general"
+        android:id="@+id/menu_main"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/content"
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_horizontal">
+                        <mimishop.yanji.com.mimishop.view.CircledNetworkImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@color/transparent"
+                            android:scaleType="fitCenter"
+                            android:id="@+id/niv_user"/>
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/transparent"
+                            android:id="@+id/iv_user"/>
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_take_photo"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/ib_take_photo"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="bottom">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="하트 미미"
+                                android:textSize="16sp"
+                                android:id="@+id/tv_nickname"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="240dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_person_level_point">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/main_background_color"
+                                            android:text="Level. "/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="3"
+                                            android:textColor="@color/main_background_color"
+                                            android:id="@+id/tv_level"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/main_background_color"
+                                            android:text="330"
+                                            android:id="@+id/tv_point"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/main_background_color"
+                                            android:text=" Point"/>
+                                        </LinearLayout>
+                                </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[친구에게 미미샵 소개하기]"
+                        android:layout_gravity="center_horizontal"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_horizontal">
+                            <ImageButton
+                                android:layout_width="33dp"
+                                android:layout_height="33dp"
+                                android:id="@+id/ib_facebook"
+                                android:background="@drawable/btn_facebook_selector"/>
+
+                            <ImageButton
+                                android:layout_width="33dp"
+                                android:layout_height="33dp"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/ib_kakao"
+                                android:background="@drawable/btn_kakao_selector"/>
+                        <ImageButton
+                            android:layout_width="33dp"
+                            android:layout_height="33dp"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/ib_kakaostory"
+                            android:background="@drawable/kakaostory_icon"/>
+                            <!--
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/ib_twitter"
+                                android:background="@drawable/btn_twitter_selector"/> -->
+                        </LinearLayout>
+                    </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/event_border_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <mimishop.yanji.com.mimishop.view.CustomImageButton
+                        xmlns:customimage="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/btn_my_jim"
+                        android:layout_gravity="center_vertical"
+                        customimage:src="@drawable/btn_my_jim_selector"
+                        customimage:space="7"
+                        customimage:text="내 찜 상점"
+                        customimage:textcolor="@color/text_gray"
+                        customimage:titlesize="12"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/event_border_gray"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <mimishop.yanji.com.mimishop.view.CustomImageButton
+                            xmlns:customimage="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btn_see_my_news"
+                            android:layout_gravity="center_vertical"
+                            customimage:src="@drawable/ic_show_my_news_selector"
+                            customimage:space="7"
+                            customimage:text="내 소식보기"
+                            customimage:textcolor="@color/text_gray"
+                            customimage:titlesize="12"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_notice_push_message"
+                            android:text="N"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:id="@+id/tv_notification_inform"
+                            android:layout_marginRight="28dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignRight="@+id/btn_main_mypage"
+                            android:layout_marginLeft="5dp"
+                            android:visibility="visible"/>
+                    </RelativeLayout>
+                    <FrameLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/event_border_gray"/>
+
+                    <mimishop.yanji.com.mimishop.view.CustomImageButton
+                        xmlns:customimage="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/btn_setting"
+                        android:layout_gravity="center_vertical"
+                        customimage:src="@drawable/ic_setting_selector"
+                        customimage:space="7"
+                        customimage:text="설정"
+                        customimage:textcolor="@color/text_gray"
+                        customimage:titlesize="12"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/event_border_gray"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <mimishop.yanji.com.mimishop.view.CustomImageButton
+                            xmlns:customimage="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btn_my_privacy"
+                            android:layout_gravity="center_vertical"
+                            customimage:src="@drawable/btn_my_privacy_selector"
+                            customimage:space="7"
+                            customimage:text="공지사항"
+                            customimage:textcolor="@color/text_gray"
+                            customimage:titlesize="12"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_notice_push_message"
+                            android:text="N"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:id="@+id/tv_notification_event"
+                            android:layout_marginRight="28dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignRight="@+id/btn_main_mypage"
+                            android:layout_marginLeft="5dp"
+                            android:visibility="visible"/>
+                     </RelativeLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/event_border_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <mimishop.yanji.com.mimishop.view.CustomImageButton
+                        xmlns:customimage="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/btn_question_to_admin"
+                        android:layout_gravity="center_vertical"
+                        customimage:src="@drawable/btn_question_to_admin_selector"
+                        customimage:space="9"
+                        customimage:text="제휴문의"
+                        customimage:textcolor="@color/text_gray"
+                        customimage:titlesize="12"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/event_border_gray"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <mimishop.yanji.com.mimishop.view.CustomImageButton
+                            xmlns:customimage="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btn_show_evelop"
+                            android:layout_gravity="center_vertical"
+                            customimage:src="@drawable/btn_envelop_selector"
+                            customimage:space="12"
+                            customimage:text="받은쪽지함"
+                            customimage:textcolor="@color/text_gray"
+                            customimage:titlesize="12"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_notice_push_message"
+                            android:text="N"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:id="@+id/tv_notification_message"
+                            android:layout_marginRight="28dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignRight="@+id/btn_main_mypage"
+                            android:layout_marginLeft="5dp"
+                            android:visibility="visible"/>
+                </RelativeLayout>
+
+                    <FrameLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/event_border_gray"/>
+
+                    <mimishop.yanji.com.mimishop.view.CustomImageButton
+                        xmlns:customimage="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/btn_register_shop"
+                        android:layout_gravity="center_vertical"
+                        customimage:src="@drawable/btn_register_shop_selector"
+                        customimage:space="3"
+                        customimage:text="내 상점 등록"
+                        customimage:textcolor="@color/text_gray"
+                        customimage:titlesize="12"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/event_border_gray"/>
+
+                    <mimishop.yanji.com.mimishop.view.CustomImageButton
+                        xmlns:customimage="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/btn_manage_shop"
+                        android:layout_gravity="center_vertical"
+                        customimage:src="@drawable/btn_manage_shop_selector"
+                        customimage:space="12"
+                        customimage:text="내 상점 관리"
+                        customimage:textcolor="@color/text_gray"
+                        customimage:titlesize="12"
+                        />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/event_border_gray"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+</LinearLayout>

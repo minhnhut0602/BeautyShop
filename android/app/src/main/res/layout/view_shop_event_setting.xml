@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:id="@+id/ll_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_mimi"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="배너 등록을 하게 되면 샵 이벤트 모아보기와 상점정보에 노출됩니다."
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <Button
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="이벤트배너등록"
+                android:background="@drawable/layout_bg_buton_start_round"
+                android:id="@+id/btn_input_info"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/layout_border_grey"
+                android:layout_marginTop="10dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/layout_bg_pink_border_grey">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="썸네일을\n등록해주세요."
+                        android:textSize="12sp"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/main_background_color"/>
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+
+                        android:id="@+id/iv_net_photo"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/transparent"
+                        android:id="@+id/iv_photo"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+                    <mimishop.yanji.com.mimishop.view.CustomEditText
+                        xmlns:customedit="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                        android:id="@+id/et_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        customedit:hint="미미네일"
+                        customedit:textsize="12"
+                        android:visibility="visible"
+                        />
+                    <mimishop.yanji.com.mimishop.view.CustomEditText
+                        xmlns:customedit="http://schemas.android.com/apk/res/mimishop.yanji.com.mimishop"
+                        android:id="@+id/et_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        customedit:hint="이벤트 제목, ex)펌가격 25%할인"
+                        customedit:textsize="12"
+                        android:visibility="visible"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="상세내용, ex)미미샵 회원 인증하고 25%할인 받으세요!"
+                        android:textColorHint="@color/light_text_gray"
+                        android:textColor="@color/text_gray"
+                        android:padding="5dp"
+                        android:textSize="12dp"
+                        android:gravity="left|top"
+                        android:background="@drawable/layout_border_grey"
+                        android:id="@+id/et_explain"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:text="수정"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_cast_comment_search_selector"
+                    android:id="@+id/btn_modify_shop_event_info"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_bg_style1_selector"
+                    android:layout_marginRight="5dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:text="등록"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_cast_comment_search_selector"
+                    android:id="@+id/btn_register_shop_event_info"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_bg_style1_selector"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

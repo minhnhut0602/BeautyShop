@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mimishop.yanji.com.mimishop.activity.mypage.MyQuestionActivity"
+    android:background="@color/white"
+    android:id="@+id/root">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/menu_general"
+        android:id="@+id/menu_main"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_margin="10dp"
+                android:gravity="left|top"
+                android:padding="5dp"
+                android:hint="문의내용을 입력해주세요."
+                android:textColorHint="@color/light_text_gray"
+                android:textSize="14sp"
+                android:textColor="@color/text_gray"
+                android:id="@+id/et_question"
+                android:background="@drawable/layout_border_grey"
+                />
+
+            <Button
+                android:textStyle="bold"
+                android:textColor="@color/text_cast_comment_search_selector"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="문의보내기"
+                android:background="@drawable/btn_bg_style1_selector"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/btn_send"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

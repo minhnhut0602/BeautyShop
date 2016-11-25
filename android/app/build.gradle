@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "mimishop.yanji.com.mimishop"
+        minSdkVersion 16
+        targetSdkVersion 20
+        versionCode 4
+        versionName "1.3"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions{
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':devsmartAndroid')
+    compile project(':viewpager_indicator')
+    compile project(':PagerSlidingTabStrip-master')
+    compile project(':KakaoSDK')
+    compile project(':FacebookSDK')
+    compile 'com.android.support:support-v4:20.0.0'
+    compile 'com.google.android.gms:play-services:6.1+'
+    compile files('libs/android-async-http-1.4.6.jar')
+    compile files('libs/gcm.jar')
+}

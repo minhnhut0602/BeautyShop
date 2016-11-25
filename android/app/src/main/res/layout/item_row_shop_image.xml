@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="85dp"
+    android:layout_height="80dp">
+
+    <include
+        android:layout_width="85dp"
+        android:layout_height="80dp"
+        layout="@layout/item_row_shop_image_empty"
+        android:id="@+id/ic_empty"/>
+
+    <RelativeLayout
+        android:layout_width="85dp"
+        android:layout_height="80dp"
+        android:id="@+id/rl_main"
+        >
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/layout_border_grey">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/iv_shop"
+                android:scaleType="fitXY"
+                />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/iv_temp"
+                />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_del_img"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ib_delete"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
